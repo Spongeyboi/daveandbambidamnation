@@ -2,5 +2,5 @@
 <TextureAtlas imagePath="dumbass_dave.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="John idle dance0000" x="0" y="0" width="1834" height="3000" frameX="0" frameY="-5" frameWidth="429" frameHeight="1000"/>
+	<SubTexture name="John idle dance0000" x="0" y="0" width="1834" height="3000" frameX="-1" frameY="-50" frameWidth="411" frameHeight="412"/>
 </TextureAtlas>
