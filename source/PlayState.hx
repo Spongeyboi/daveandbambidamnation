@@ -384,23 +384,6 @@ class PlayState extends MusicBeatState
 				var bg:BGSprite = new BGSprite('sky', -600, -200, 0.9, 0.9);
 				add(bg);
 
-				var stageFront:BGSprite = new BGSprite('hills', -650, 600, 0.9, 0.9);
-				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
-				stageFront.updateHitbox();
-				add(stageFront);
-				
-				var stageFront2:BGSprite = new BGSprite('grass', -650, 600, 0.9, 0.9);
-				stageFront2.setGraphicSize(Std.int(stageFront.width * 1.1));
-				stageFront2.updateHitbox();
-				add(stageFront2);
-
-				if(!ClientPrefs.lowQuality) {
-					var stageFront3:BGSprite = new BGSprite('gate', -650, 600, 0.9, 0.9);
-					stageFront3.setGraphicSize(Std.int(stageFront.width * 1.1));
-					stageFront3.updateHitbox();
-					add(stageFront3);
-				}
-
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
