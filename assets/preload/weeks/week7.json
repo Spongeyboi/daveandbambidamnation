@@ -19,5 +19,6 @@
 
 	"hideStoryMode": true,
 	"hideFreeplay": false,
+	
 	"difficulties": ["hard"]
 }
