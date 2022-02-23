@@ -1,13 +1,14 @@
 {
 	"songs": [
 		["mansion", "dave", [146, 113, 253]],
-		["banger", "dave", [146, 113, 253]]
+		["banger", "dave", [146, 113, 253]],
+		["treacherous", "dumbass-dave", [146, 113, 253]]
 	],
 
 	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
+		"",
+		"",
+		"bf"
 	],
 	"weekBackground": "stage",
 
