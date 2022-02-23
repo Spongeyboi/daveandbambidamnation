@@ -1,6 +1,7 @@
 {
 	"songs": [
 		["mansion", "dave", [146, 113, 253]],
+		["banger", "dave", [146, 113, 253]],
 		["fair", "blue", [146, 113, 253]],
 		["raging", "dave", [146, 113, 253]]
 	],
@@ -17,7 +18,7 @@
 	"weekName": "Week 1",
 	"startUnlocked": true,
 
-	"hideStoryMode": true,
+	"hideStoryMode": false,
 	"hideFreeplay": false,
 	
 	"difficulties": ["hard"]
