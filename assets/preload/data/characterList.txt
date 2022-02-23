@@ -20,4 +20,6 @@ spirit
 bf-pixel-opponent
 pico-player
 dave
+dave-weird
+dave-funni
 blue
