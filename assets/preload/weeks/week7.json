@@ -1,9 +1,7 @@
 {
 	"songs": [
 		["mansion", "dave", [146, 113, 253]],
-		["banger", "dave", [146, 113, 253]],
-		["fair", "blue", [146, 113, 253]],
-		["raging", "dave", [146, 113, 253]]
+		["banger", "dave", [146, 113, 253]]
 	],
 
 	"weekCharacters": [
@@ -15,7 +13,7 @@
 
 	"storyName": "Extras",
 	"weekBefore": "tutorial",
-	"weekName": "Week 1",
+	"weekName": "Week 7",
 	"startUnlocked": true,
 
 	"hideStoryMode": false,
