@@ -34,7 +34,4 @@
 	<SubTexture name="BF PISSED LOOP0003" x="1591" y="430" width="384" height="403" frameX="0" frameY="-4" frameWidth="387" frameHeight="407"/>
 	<SubTexture name="BF PISSED LOOP0004" x="816" y="430" width="381" height="407"/>
 	<SubTexture name="BF PISSED LOOP0005" x="816" y="430" width="381" height="407"/>
-	<SubTexture name="BF SHOCK0000" x="1979" y="430" width="396" height="407" pivotX="-72.35" pivotY="-60.45"/>
-	<SubTexture name="BF SHOCK0001" x="2379" y="430" width="396" height="407"/>
-	<SubTexture name="BF SHOCK LOOP0000" x="2779" y="430" width="400" height="421" pivotX="-69.3" pivotY="-46.6"/>
 </TextureAtlas>
