@@ -208,7 +208,7 @@ class PlayState extends MusicBeatState
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
 	
-	public var swayNotes:Bool = false;
+	//public var swayNotes:Bool = false;
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
@@ -2792,6 +2792,13 @@ class PlayState extends MusicBeatState
 				rotCamSpd = Std.parseFloat(value1);
 				rotCamRange = Std.parseFloat(value2);
 			case 'Stop Camera rotate':
+				rotCam = false;
+				camera.angle = 0;
+			case 'Do note move':
+				swayNotes = true;
+				swayNotesSpd = Std.parseFloat(value1);
+				swayNotesRange = Std.parseFloat(value2);
+			case 'Stop note rotate':
 				rotCam = false;
 				camera.angle = 0;
 		}
