@@ -207,6 +207,8 @@ class PlayState extends MusicBeatState
 	var bgGirls:BackgroundGirls;
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
+	
+	public var swayNotes:Boolean = false;
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
@@ -256,6 +258,9 @@ class PlayState extends MusicBeatState
 
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
+		
+		rotCam = false;
+		camera.angle = 0;
 
 		practiceMode = false;
 		// var gameCam:FlxCamera = FlxG.camera;
@@ -1011,6 +1016,9 @@ class PlayState extends MusicBeatState
 				case 'senpai' | 'roses' | 'thorns':
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
+					
+				case 'mansion' | 'banger' | 'treacherous' | 'house':
+					startdialogue(doof);
 
 				default:
 					startCountdown();
@@ -1812,6 +1820,11 @@ class PlayState extends MusicBeatState
 	var startedCountdown:Bool = false;
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
+	
+	public static var rotCam = false;
+	var rotCamSpd:Float = 1;
+	var rotCamRange:Float = 10;
+	var rotCamInd = 0;
 
 	override public function update(elapsed:Float)
 	{
@@ -1819,6 +1832,10 @@ class PlayState extends MusicBeatState
 		{
 			iconP1.swapOldIcon();
 		}*/
+		
+		if (swayNotes == true){
+			
+		}
 
 		callOnLuas('onUpdate', [elapsed]);
 
@@ -1932,6 +1949,16 @@ class PlayState extends MusicBeatState
 						heyTimer = 0;
 					}
 				}
+		}
+		
+		if (rotCam)
+		{
+			rotCamInd ++;
+			camera.angle = Math.sin(rotCamInd / 100 * rotCamSpd) * rotCamRange;
+		}
+		else
+		{
+			rotCamInd = 0;
 		}
 
 		if(!inCutscene) {
@@ -2742,6 +2769,14 @@ class PlayState extends MusicBeatState
 			
 			case 'BG Freaks Expression':
 				if(bgGirls != null) bgGirls.swapDanceType();
+			case 'Do Camera rotate':
+				//Some Shaggy mod code because I have no fkin' idea what I'm doing :skull
+				rotCam = true;
+				rotCamSpd = Std.parseFloat(value1);
+				rotCamRange = Std.parseFloat(value2);
+			case 'Stop Camera rotate':
+				rotCam = false;
+				camera.angle = 0;
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
