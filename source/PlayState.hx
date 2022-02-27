@@ -208,7 +208,7 @@ class PlayState extends MusicBeatState
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
 	
-	public var swayNotes:Boolean = false;
+	public var swayNotes:Bool = false;
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
