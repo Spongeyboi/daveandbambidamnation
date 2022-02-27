@@ -262,7 +262,7 @@ class PlayState extends MusicBeatState
 		rotCam = false;
 		camera.angle = 0;
 		
-		swayCam = false;
+		swayNotes = false;
 
 		practiceMode = false;
 		// var gameCam:FlxCamera = FlxG.camera;
