@@ -2799,8 +2799,8 @@ class PlayState extends MusicBeatState
 				swayNotesSpd = Std.parseFloat(value1);
 				swayNotesRange = Std.parseFloat(value2);
 			case 'Stop note rotate':
-				rotCam = false;
-				camera.angle = 0;
+				swayNotes = false;
+				camHUD.x = 0;
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
