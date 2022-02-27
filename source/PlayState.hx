@@ -261,6 +261,8 @@ class PlayState extends MusicBeatState
 		
 		rotCam = false;
 		camera.angle = 0;
+		
+		swayCam = false;
 
 		practiceMode = false;
 		// var gameCam:FlxCamera = FlxG.camera;
@@ -1825,6 +1827,11 @@ class PlayState extends MusicBeatState
 	var rotCamSpd:Float = 1;
 	var rotCamRange:Float = 10;
 	var rotCamInd = 0;
+				
+	public static var swayNotes = false;
+	var swayNotesSpd:Float = 1;
+	var swayNotesRange:Float = 10;
+	var swayNotesInd = 0;
 
 	override public function update(elapsed:Float)
 	{
@@ -1959,6 +1966,16 @@ class PlayState extends MusicBeatState
 		else
 		{
 			rotCamInd = 0;
+		}
+		
+		if (swayNotes)
+		{
+			swayNotesInd ++;
+			camHUD.x = Math.sin(swayNotesInd / 100 * swayNotesSpd) * swayNotesRange;
+		}
+		else
+		{
+			swayNotesInd = 0;
 		}
 
 		if(!inCutscene) {
