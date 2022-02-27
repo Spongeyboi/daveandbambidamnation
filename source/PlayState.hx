@@ -1018,7 +1018,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 					
 				case 'mansion' | 'banger' | 'treacherous' | 'house':
-					startdialogue(doof);
+					startDialogue(dialogueJSON);
 
 				default:
 					startCountdown();
