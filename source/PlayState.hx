@@ -2798,7 +2798,7 @@ class PlayState extends MusicBeatState
 				swayNotes = true;
 				swayNotesSpd = Std.parseFloat(value1);
 				swayNotesRange = Std.parseFloat(value2);
-			case 'Stop note rotate':
+			case 'Stop note move':
 				swayNotes = false;
 				camHUD.x = 0;
 		}
